@@ -8,8 +8,8 @@
 }
 
 :root {
-    --goodResp: Green;
-    --badResp: Red;
+    --goodResp: #00800060;
+    --badResp: #ff000060;
 }
 
 .container {
@@ -47,9 +47,13 @@
 .card .card-body span {
     display: inline-block;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 5px;
     margin: 5px 0 5px;
+    transition: transform 0.2s ease-in-out;
+}
+.card .card-body span:hover {
+    transform: scale(0.9);
 }
 
 .card .card-footer {
@@ -70,4 +74,13 @@
 }
 .card .card-footer button:hover {
     background-color: #333;
+}
+
+.card .card-body .goodResp {
+    background-color: var(--goodResp);
+    border: 2px solid #006500;
+}
+.card .card-body .badResp {
+    background-color: var(--badResp);
+    border: 2px solid #650000;
 }
