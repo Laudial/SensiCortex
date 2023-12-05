@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --goodResp: #00800060;
+    --badResp: #ff000060;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+
+.card {
+    padding: 1em 1em;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.card .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+}
+
+.card-body {
+    margin: 5px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.card .card-body h3 {
+    margin: 5px;
+}
+.card .card-body .answer {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0 5px;
+    transition: transform 0.2s ease-in-out;
+}
+.card .card-body .answer:last-child {
+    margin-bottom: 0;
+}
+.card .card-body .answer:hover {
+    transform: scale(0.9);
+}
+
+.card .card-body .goodResp {
+    background-color: var(--goodResp);
+    border: 2px solid #006500;
+}
+.card .card-body .badResp {
+    background-color: var(--badResp);
+    border: 2px solid #650000;
+}
+
+.card .card-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1em;
+}
+.card .card-footer .submit {
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #ccc;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.card .card-footer .submit:hover {
+    background-color: #333;
+}
+
+#feedback {
+    display: none;
+    margin-right: auto;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ff0000;
+    transition: all 0.2s ease-in-out;
+}

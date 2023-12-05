@@ -1,0 +1,20 @@
+[
+    {
+        "id" : 1,
+        "question" : "Combien de temps faut-il pour qu'une bouteille se décompose naturellement ?",
+        "choice" : ["100 ans", "450 ans", "1000 ans", "5000 ans"],
+        "correctAnswer" : "450 ans"
+    },
+    {
+        "id" : 2,
+        "question" : "Comment pouvons-nous encourager l'utilisation responsable des emballages pour minimiser la pollution plastique ?",
+        "choice" : ["En utilisant des emballages biodégradables", "En utilisant des emballages réutilisables", "En utilisant des emballages recyclables", "Toutes les réponses sont correctes"],
+        "correctAnswer" : "Toutes les réponses sont correctes"
+    },
+    {
+        "id" : 3,
+        "question" : "Quels sont les effets du recyclage sur la réduction des déchets plastiques ?",
+        "choice" : ["Réduire la pollution", "Réduire la consommation d'énergie", "Réduire les émissions de gaz à effet de serre", "Toutes les réponses sont correctes"],
+        "correctAnswer" : "Toutes les réponses sont correctes"
+    }
+]
